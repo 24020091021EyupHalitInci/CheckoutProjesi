@@ -21,7 +21,7 @@ if (isset($_POST['kayit_ol'])) {
             VALUES ('$ad', '$soyad', '$kullanici_adi', '$email', '$adres')";
     $conn->query($sql);
 
-    // Kayıt bitince sayfayı yenile ki aşağıda hemen görünsün
+    // Kayıt bitince sayfayı yenileme
     header("Location: index.php");
     exit;
 }
